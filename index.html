@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyChat - Instagram-like Chat</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1 class="app-title">*あすたりすく</h1>
+  <div class="chat-container">
+    <ul class="chat-list" id="chatList">
+      <!-- チャットメッセージをここに追加する -->
+    </ul>
+  </div>
+  <div class="input-container">
+    <input type="text" id="messageInput" class="rounded-input" placeholder="Type a message..." onkeydown="handleKeyPress(event)">
+    <button id="sendButton" onclick="sendMessage()">送信</button>
+  </div>
+
+  <div id="dropdownMenu" class="dropdown-menu">
+    <a href="#" onclick="deleteMessage()">Delete Message</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
